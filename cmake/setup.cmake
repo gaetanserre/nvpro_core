@@ -103,9 +103,9 @@ if(NOT CMAKE_BUILD_TYPE)
   set(CMAKE_BUILD_TYPE "Release" CACHE STRING "Choose the type of build, options are: Debug Release RelWithDebInfo MinSizeRel." FORCE)
 endif()
 
-if(NOT EXISTS ${BASE_DIRECTORY}/downloaded_resources)
-  file(MAKE_DIRECTORY ${BASE_DIRECTORY}/downloaded_resources)
-endif()
+# if(NOT EXISTS ${BASE_DIRECTORY}/downloaded_resources)
+#   file(MAKE_DIRECTORY ${BASE_DIRECTORY}/downloaded_resources)
+# endif()
 
 set(DOWNLOAD_TARGET_DIR "${BASE_DIRECTORY}/downloaded_resources")
 set(DOWNLOAD_SITE http://developer.download.nvidia.com/ProGraphics/nvpro-samples)
