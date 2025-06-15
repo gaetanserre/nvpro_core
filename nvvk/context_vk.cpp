@@ -285,13 +285,13 @@ bool Context::initInstance(const ContextCreateInfo& info)
   if(info.verboseUsed)
   {
     LOGI("______________________\n");
-    LOGI("Used Instance Layers :\n");
+    LOGI("Used Instance Layers:\n");
     for(const auto& it : m_usedInstanceLayers)
     {
       LOGI("%s\n", it.c_str());
     }
     LOGI("\n");
-    LOGI("Used Instance Extensions :\n");
+    LOGI("Used Instance Extensions:\n");
     for(const auto& it : m_usedInstanceExtensions)
     {
       LOGI("%s\n", it.c_str());
@@ -558,7 +558,7 @@ bool Context::initDevice(uint32_t deviceIndex, const ContextCreateInfo& info)
   if(info.verboseUsed)
   {
     LOGI("________________________\n");
-    LOGI("Used Device Extensions :\n");
+    LOGI("Used Device Extensions:\n");
     for(const auto& it : m_usedDeviceExtensions)
     {
       LOGI("%s\n", it.c_str());
@@ -1045,7 +1045,7 @@ std::vector<uint32_t> Context::getCompatibleDevices(const ContextCreateInfo& inf
   if(info.verboseCompatibleDevices)
   {
     LOGI("____________________\n");
-    LOGI("Devices : %d\n", nbElems);
+    LOGI("Devices: %d\n", nbElems);
   }
 
   uint32_t compatible = 0;
@@ -1086,7 +1086,7 @@ std::vector<uint32_t> Context::getCompatibleDevices(const ContextCreateInfo& inf
 
   if(info.verboseCompatibleDevices)
   {
-    LOGI("Compatible physical devices found : ");
+    LOGI("Compatible physical devices found: ");
     if(compatible > 0)
     {
       LOGI("%d\n", compatible);
