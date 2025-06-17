@@ -21,6 +21,7 @@
 #include <filesystem>
 #include <glm/gtx/norm.hpp>
 #include <unordered_set>
+#include <numeric>
 
 #include "gltfscene.hpp"
 #include "parallel_work.hpp"

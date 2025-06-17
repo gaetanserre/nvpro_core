@@ -24,6 +24,10 @@ set(NVPWINDOW_SOURCE
   ${BASE_DIRECTORY}/nvpro_core/nvp/perproject_globals.hpp
 )
 
+set(CMAKE_CXX_STANDARD 23)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O3")
+
 if(UNIX) 
   LIST(APPEND NVPWINDOW_SOURCE ${BASE_DIRECTORY}/nvpro_core/nvp/nvpsystem_linux.cpp )
 else()
